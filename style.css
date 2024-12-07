@@ -1,0 +1,263 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna y elegante */
+    margin: 0;
+    background-color: #f8f8f8; /* Fondo gris claro suave */
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Tipografía elegante para los títulos */
+    color: #f06292; /* Color rosa del logo */
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #fff; /* Fondo blanco para el encabezado */
+    padding: 20px 0;
+    border-bottom: 1px solid #eee; /* Línea sutil para separar el encabezado */
+    display: flex; /* Para alinear el logo y el menú */
+    justify-content: space-between; /* Espacio entre el logo y el menú */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  header h1 {
+    margin: 0; /* Eliminar margen del título */
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  
+  header nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+  }
+  
+  header nav a:hover {
+    color: #f06292; /* Cambiar color al pasar el ratón */
+  }
+  
+  /* Estilos de la sección de inicio */
+  #inicio {
+    text-align: center;
+    padding: 80x 0;
+    background-image: url("img/Romero.jpg"); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative; /* Para posicionar el texto */
+  }
+  
+  #inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurecer la imagen de fondo */
+  }
+  
+  #inicio .container {
+    position: relative; /* Para que el texto esté encima del fondo oscuro */
+    z-index: 1; /* Asegurar que el texto esté en primer plano */
+  }
+  
+  #inicio h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  #inicio p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos de la sección de productos */
+  #productos {
+    padding: 60px 0;
+  }
+  
+  .product {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  }
+  
+  .product:hover {
+    transform: translateY(-5px); /* Elevar ligeramente al pasar el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    margin-bottom: 10px;
+    color: #f06292;
+  }
+  
+  .product p {
+    line-height: 1.6;
+  }
+  
+  .product .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f06292;
+  }
+  
+  .product ul {
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de la sección "Sobre nosotros" */
+  #sobre-nosotros {
+    padding: 60px 0;
+    background-color: #f06292; /* Color rosa del logo */
+    color: #fff;
+  }
+  
+  #sobre-nosotros .container {
+    text-align: center;
+  }
+  
+  #sobre-nosotros h2 {
+    color: #fff;
+  }
+  
+  #sobre-nosotros p {
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos de la sección de contacto */
+  #contacto {
+    padding: 60px 0;
+  }
+  
+  #contacto label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #contacto input, #contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Estilos de la sección del blog */
+  #blog {
+    padding: 60px 0;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px); /* Elevar ligeramente al pasar el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .blog-post h3 {
+    margin-bottom: 10px;
+    color: #f06292;
+  }
+  
+  .blog-post p {
+    line-height: 1.6;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  /* Estilos del botón */
+  .button {
+    display: inline-block;
+    background-color: #f06292;
+    color: #fff;
+    padding: 1px 1px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 50;
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  
+  .button:hover {
+    background-color: #ec407a;
+  }
+
+  /* Ajustar tamaño de las imágenes en la sección de inicio */  
+#inicio img {  
+    max-width: 40%; /* La imagen ocupará como máximo el 80% del ancho de su contenedor */  
+    height: auto; /* La altura se ajustará automáticamente */  
+    margin: 0 auto; /* Centrar la imagen */  
+    display: block; /* Para que el margen automático funcione correctamente */  
+    }  
+      
+    /* Ajustar tamaño de las imágenes en la sección de productos */  
+    .product img {  
+    max-width: 30%; /* La imagen ocupará como máximo el 100% del ancho de su contenedor */  
+    height: auto; /* La altura se ajustará automáticamente */  
+    display: block; /* Para que el margen automático funcione correctamente */  
+    margin: 0 auto; /* Centrar la imagen */  
+    }
+
+    .logo-pie {
+      max-width: 100px; /* Ajusta el valor según el tamaño que desees */
+      height: auto;
+    }
+
+    footer img {
+      max-width: 20px; /* Ajusta el valor según el tamaño que desees */
+      height: auto;
+    }
